@@ -1,4 +1,4 @@
-# Phase 4: Court-judgment classification
+# Phase 4: Court-judgement classification
 
 The task predicts one of two judgment classes for an entire legal document. Documents are split into context-sized chunks, each chunk is encoded, and chunk representations are combined before classification. The experiments compare backbones and adaptation methods, then test context aggregation: mean, attention, weighted and maximum pooling; overlap; selected document sections; a hierarchical GRU; and different classification heads. Calibration is treated as a separate output decision.
 
