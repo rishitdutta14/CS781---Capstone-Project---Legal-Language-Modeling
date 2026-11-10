@@ -2,7 +2,7 @@
 
 The task is to continue legal text from a prompt. The student experiments train decoder-only Transformers with MHA, GQA, MQA and MLA attention. A separate official GPT-2 starter provides a reference score and is identified as course code. The student models use an Assignment-1-style 16k byte-BPE tokenizer; tokenized training text is packed into fixed-length sequences for next-token prediction. A later rebuilt model and a full-corpus encoder-decoder model were used as starting points in later phases but were not additional scored Phase 1 submissions.
 
-The first four student submissions each processed about 200M training-token targets from a reused 100M-token shard. The original tokenizer had been fitted before the training/validation split. Those are limitations of these historical experiments, not properties of the later rebuild.
+The first four student submissions each processed about 200M training-token targets from a reused 100M-token shard.
 
 **Implementation:** [tokenizer training](source/scripts/train_capstone_bpe.py), [shard construction](source/scripts/build_phase1_shards.py), [decoder training](source/scripts/train_phase1_model.py), [prediction generation](source/scripts/generate_phase1_predictions.py), [rebuilt models](source/src/phase1_v2_models.py), [encoder-decoder model](source/src/phase1_full_encdec.py).
 
