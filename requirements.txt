@@ -1,0 +1,19 @@
+# Install a CUDA-compatible torch build separately.
+numpy
+pandas
+matplotlib
+scikit-learn
+transformers
+tokenizers
+huggingface-hub
+datasets
+accelerate
+ijson
+xxhash
+rouge-score
+bert-score
+nltk
+nbformat
+pytest
+tqdm
+psutil
